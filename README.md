@@ -3,18 +3,22 @@
 ## usersテーブル
 |Column|Type|Options|
 |------|----|-------|
+|id|integer|null: false|
 |email|string|null: false|
 |password|string|null: false|
-|username|string|null: false|
+|name|string|null: false|
 ### Association
-- has_many :group
-- has_many :massages
+- has_many :groups,  through:  :users_groups
+- has_many :users_groups
+- has_many :messages
 
 
-## massagesテーブル
+## messagesテーブル
 |Column|Type|Options|
 |------|----|-------|
-|text|text|null: false|
+|id|integer|null: false|
+|text|text||
+|image|text||
 |user_id|integer|null: false, foreign_key: true|
 |group_id|integer|null: false, foreign_key: true|
 ### Association
@@ -22,25 +26,24 @@
 - belongs_to :user
 
 
-## groupテーブル
+## groupsテーブル
 |Column|Type|Options|
 |------|----|-------|
+|id|integer|null: false|
 |title|text|null: false|
-|text|text|null: false|
-|user_id|integer|null: false, foreign_key: true|
+
 ### Association
-- belongs_to :user
-- has_many :massages
-- has_many :users_group
-- has_many  :massages,  through:  :users_group
+- has_many :users,  through:  :users_groups
+- has_many :messages
+- has_many :users_groups
 
 
 
-## users_groupテーブル
+## users_groupsテーブル
 |Column|Type|Options|
 |------|----|-------|
 |group_id|integer|null: false, foreign_key: true|
-|tag_id|integer|null: false, foreign_key: true|
+|user_id|integer|null: false, foreign_key: true|
 ### Association
-- belongs_to :group
-- belongs_to :massages
+- belongs_to :user
+- has_many :groups
