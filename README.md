@@ -38,10 +38,6 @@
 - has_many :users_groups
 
 
-
-
-
-
 ## users_groupsテーブル
 |Column|Type|Options|
 |------|----|-------|
