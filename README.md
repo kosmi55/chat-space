@@ -30,7 +30,7 @@
 |Column|Type|Options|
 |------|----|-------|
 |id|integer|null: false|
-|title|text|null: false|
+|title|string|null: false|
 
 ### Association
 - has_many :users,  through:  :users_groups
