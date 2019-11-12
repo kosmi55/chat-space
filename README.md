@@ -39,6 +39,9 @@
 
 
 
+
+
+
 ## users_groupsテーブル
 |Column|Type|Options|
 |------|----|-------|
