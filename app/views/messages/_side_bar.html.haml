@@ -1,0 +1,21 @@
+.chat-side
+  .side-header
+    .side-header__box
+ 
+      %ul.side-header__box__menu
+        %p.side-header__box__user-name name
+
+        %p.side-header__box__menu--icon
+          %a{:href => "link_to＃"}
+            -# %i.fa.fa-edit
+            = icon('fas', 'edit', class: "edit")
+          -# %li.side-header__box__menu__edit-user
+          %a{:href => "link_to＃"}
+            -# %i.fa.fa-cog
+            = icon('fas', 'cog', class: "cog")
+  
+  .div.groups
+    .div.groups__box
+      %ul.div.groups__box__menu
+      %p.div.groups__box__group-name group name
+      %p.div.groups__box__message hello!
