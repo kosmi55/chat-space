@@ -15,19 +15,11 @@
   color: white;
   font-size: 12.5px;
   padding: 0 20px;
-}
-.side-header__box__menu{
+  &__box__menu{
   display: flex;
   line-height: 100px;
   justify-content: space-between;
-}
-.div.groups__box__group-name{
-  position: absolute;
-}
-.div.groups__box__message{
-  position: absolute;
-  top: 135px;
-}
+  }}
 .edit{
   color: white;
 }
@@ -42,12 +34,19 @@
     color: white;
     padding: 10px 20px 0;
   }  
-    &__box__menu{
-      height: 20px;
-      width: 100px;
-      background-color: #253141;
-      position: absolute;
-}}
+  &__box__menu{
+    height: 20px;
+    width: 100px;
+    background-color: #253141;
+    position: absolute;
+  }
+  &__box__group-name{
+    position: absolute;
+  }
+  &__box__message{
+    position: absolute;
+    top: 135px;
+  }}
 
 // main
 .main-header{
