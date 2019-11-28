@@ -4,7 +4,7 @@
       .main-header_left-box sss
       .main-header_left-memberlist Member:zzzzzz
     .main-header_edit-btn
-      %a{:href => "#"} Edit
+      = link_to "Edit", "URL", class: "edit"
 
   .messages
     .messages_message
@@ -13,12 +13,25 @@
     .messages_message_text 1234567890
 
   .footer
-    .footer_left-box
-      .footer_left-box_message
-      %input{:placeholder => "type a message", :type => "text"}
-    .footer_send-btn
-      %a{:href => "#"} Send 
-    %label.box_icon{for: 'a'}
-      = icon('far', 'image', class: "image")
-      %input{type: "file" ,class: "box",id: "a"}
+    %form
+      .footer-left
+        %input.message-box{placeholder: "type a message", type: "text"}
+        %label.box_icon{for: 'a'}
+          = icon('far', 'image', class: "image")
+          %input{type: "file" ,class: "box",id: "a"}
+      .footer-right
+        %input{type: "submit",placeholder: "type-btn" , value: "Send", class:"send-box"}
 
+
+
+    -# .footer_left-box
+    -#   .footer_left-box_message
+    -#     %input{placeholder: "type a message", type: "text"}
+    -#   .footer_send-btn
+    -#     = link_to "#", class: "send" do
+    -#       %input{type: "submit",placeholder: "type-btn" , value: "SEND", class:"send-box"}
+    -#       -# %input{placeholder: "type" ,type:"submit", class:"send-box"} 
+    -#       -# %input{type:"submit", class:"send-box"} 
+    -# %label.box_icon{for: 'a'}
+    -#   = icon('far', 'image', class: "image")
+    -#   %input{type: "file" ,class: "box",id: "a"}
