@@ -16,30 +16,24 @@
   font-size: 12.5px;
   padding: 0 20px;
 }
-
 .side-header__box__menu{
   display: flex;
   line-height: 100px;
   justify-content: space-between;
 }
-
 .div.groups__box__group-name{
   position: absolute;
 }
-
 .div.groups__box__message{
   position: absolute;
   top: 135px;
 }
-
 .edit{
   color: white;
 }
-
 .cog{
   color: white;
 }
-
 .div.groups{
   &__box{
     height: calc(100vh - 100px);
@@ -79,7 +73,6 @@
     top: 74px;
     color: #999;
 }}
-
 .main-header_edit-btn{
   height: 40px;
   line-height: 40px;
@@ -90,7 +83,6 @@
   text-align: center;
   right: 40px;
 }
-
 .messages{ 
   font-size: 14px;
   height: Calc(100vh - 190px);
@@ -99,7 +91,6 @@
   background-color: #fafafa;
   list-style: none;
 }
-
 .messages_message{
   padding-bottom:40px;
   position: relative;
@@ -125,7 +116,6 @@
       font-size: 10px;
       margin-bottom: 10px;
     }}
-
 .footer{
   height: 90px;
   padding: 20px 40px;
@@ -141,11 +131,9 @@
     & input{
       background-color: white;     
   }}}
-
 .message-box{
   width: 100%;
 }
-
 .image{
   width: 15px;
   color: #333;
@@ -153,7 +141,6 @@
   right: 150px;
   bottom: 45px;
 }
-
 .footer-right{
   width: 90px;
   height: 50px;
@@ -163,14 +150,12 @@
   right: 40px;
   bottom: 20px;
   display: flex;
-
   & .send-box{
     width: 90px;
     height: 50px;
     background-color: #38aef0; 
     color: white;
   }}
-
 .box{
   display: none;
 }
