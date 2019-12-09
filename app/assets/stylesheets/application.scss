@@ -1,32 +1,7 @@
-@import "./reset";
 @import "font-awesome-sprockets";
-@import "./font-awesome";
-@import "chat";
-
-// // headerについての記述は省略
-// .contents {
-//   height: calc(100vh - 90px - 20px);
-//   width:900px;
-//   margin: 0 auto;
-//   background-color: #fffacd;
-// }
-
-// // headerについての記述は省略
-// .contents {
-//   height: calc(100vh - 90px - 20px);
-//   width:900px;
-//   margin: 0 auto;
-//   background-color: #fffacd;
-//   &__message{
-//     padding: 40px;
-//     color:#ffa500;
-//     font-size:30px;
-//     text-align: center;
-//   }
-// }
-
-
-
-
-
-
+@import "font-awesome";
+@import "./reset";
+@import "./chat";
+@import "modules/user";
+@import "config/colors";
+@import "modules/flash";
